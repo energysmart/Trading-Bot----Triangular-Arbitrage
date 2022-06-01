@@ -5,7 +5,7 @@ This bot has been carefully built up to the point of being able to spot Arbitrag
 
 ## NOTE:
 
-THIS PROJECT IS ONLY PART OF A LARGER PROJECT AIMED AT AUTHOMATING EVERYTHING TRADING AND MAKING IT ACCESSIBLE TO MANY. The larger project is hosted on a Private Repository. If you which to contribute to the larger Project or have access to the team, Message Me (+23408087118129 Whatsapp or email onwukavictoronwuka@gmail.com)
+THIS PROJECT IS ONLY PART OF A LARGER PROJECT AIMED AT AUTOMATING EVERYTHING TRADING AND MAKING IT ACCESSIBLE TO MANY. The larger project is hosted on a Private Repository. If you wish to contribute to the larger Project or have access to the team, Message Me (+23408087118129 Whatsapp or email onwukavictoronwuka@gmail.com)
 
 ## Tech Stack Used
 
@@ -39,6 +39,7 @@ yarn dev
 ```
 
 Open [https://localhost:3000](http://localhost:3000) with your browser to see the result.
+
 First, you need to create an account with kucoin exchange to generate your own API key which is added at ./exchanges/kucoin/myconfig.js
 
 ```
@@ -63,9 +64,9 @@ Thanks For Checking out this Project. Please Contribute.
 
 ## Follow me on Twitter and Medium
 
-My Twitter Page - [Onwuka Victor@MrOvos](https://twitter.com/MrOvos)
-I also write on Medium. Stories on Programing and Cryptocurrency and Startups
-[Medium](https://medium.com/@MrOvos)
+= My Twitter Page - [Onwuka Victor@MrOvos](https://twitter.com/MrOvos)
+
+- I also write on Medium. Stories on Programing and Cryptocurrency and Startups on my [Medium](https://medium.com/@MrOvos) blog.
 
 ## You may want to learn Next.js Bellow
 
