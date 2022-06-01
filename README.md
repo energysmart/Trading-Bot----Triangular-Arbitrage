@@ -41,6 +41,8 @@ yarn dev
 Open [https://localhost:3000](http://localhost:3000) with your browser to see the result.
 First, you need to create an account with kucoin exchange to generate your own API key which is added at ./exchanges/kucoin/myconfig.js
 
+```
+
 export const config = {
 baseUrl: "https://api.kucoin.com",
 apiAuth: {
@@ -50,6 +52,8 @@ passphrase: "SPOT_T_ARBITRAGE", // KC-API-PASSPHRASE
 },
 authVersion: 2, // KC-API-KEY-VERSION. Notice: for v2 API-KEY, not required for v1 version.
 };
+
+```
 
 Next, generate The metadatas ( Triangles.json and Tradefees.json ) by clicking the generate metadata button.
 
