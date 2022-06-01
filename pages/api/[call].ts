@@ -3,7 +3,7 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import { generateTriangles, spotArbitrage } from "../../exchanges/kucoin/rest";
 
 type Data = {
-  name: string,
+  name: string;
 };
 
 export default async function handler(
@@ -14,11 +14,11 @@ export default async function handler(
   const { call } = req.query;
   console.log(call);
 
-  if (req.method === "GET" && call === "getTriangles") {
+  if (req.method === "GET" && call === "generate_meta") {
     response = await generateTriangles();
-    // console.log(response);
+    console.log(response);
   }
-  if (req.method === "GET" && call === "spotArbitrage") {
+  if (req.method === "GET" && call === "spot_arbitrage") {
     response = await spotArbitrage(10, []);
     // console.log(response);
   }
