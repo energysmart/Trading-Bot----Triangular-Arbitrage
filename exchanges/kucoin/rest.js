@@ -1,27 +1,25 @@
-import axios from "axios";
 const fs = require("fs");
 const _ = require("lodash");
 import T_ArbitrageMetadata from "../../strategy/T_ARB_metadata";
 import Spotter from "../../strategy/spotter";
+import { config } from "./myconfig";
 
 /** Require SDK */
 const API = require("kucoin-node-sdk");
-import { config } from "./myconfig";
+
 /** Init Configure */
 API.init({ ...config });
 
-//initialize axios client as trading Client
-const tdClient = (method, url, data) => {
-  let config = auth(myConfig, method, url, data);
-  return axios.create({
-    baseURL: "https://api.kucoin.com",
-    headers: {
-      ...config,
-    },
-  });
-};
-
-//This function is spots the arbitrage opportunities
+/**
+ *@name spotArbitrage
+ *@author Onwuka Victor https://twitter.com/MrOvos
+ *@description spots the arbitrage opportunities
+ *@param {number} spotCount - the number of spotted, to return
+ *@param {Array} trianglesClient - list of triangules to spot from
+ *@return {Object} {data, success}
+ * - {Array} data - list of objects - triangle, profitPercent, feeRate, crossRate, orderPaths, paths
+ * - {Boolean} success - true or false
+ */
 export async function spotArbitrage(spotCount = 10, trianglesClient = []) {
   let response;
   let tickers = [];
@@ -76,7 +74,14 @@ export async function spotArbitrage(spotCount = 10, trianglesClient = []) {
   return response;
 }
 
-// /** Generates Arbitragetriangles*/
+/**
+ *@name generateTriangles
+ *@author Onwuka Victor https://twitter.com/MrOvos
+ *@description generates triangles including tradefees and stores them at
+ *             "./metadata/kucoin/triangles.json" and "./metadata/kucoin/tradefees.json"
+ *             respectively. Used for spotting arbitrage
+ *@return {Object} {success, data} - success true or false. data used at frontend
+ */
 export async function generateTriangles() {
   let response;
   let currencies = [];
@@ -134,8 +139,7 @@ export async function generateTriangles() {
       triangles_saved: triangles_saved,
       fees_saved: fees_saved,
     },
+    suceess: true,
   };
-
-  console.log(response.data);
   return response;
 }

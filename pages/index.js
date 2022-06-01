@@ -67,6 +67,7 @@ class Home extends Component {
           <div className={styles.description}>
             <SpotTable spotted={this.state.spotted} />
             <code className={styles.code}>https://twitter.com/MrOvos</code>
+            <code className={styles.code}>https://medium.com/@MrOvos</code>
           </div>
           <Tweet tweetId="1524317983279046657" />
         </main>
