@@ -1,16 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This isMy Cryptocurrency Triangular Arbitrage Trading Bot
+This bot has been carefully built up to the point of being able to spot Arbitrage Opportunities on the Cryptocurrency Exchange called [Kucoin](https://kucoin.com) Using the [kucoin API documentation](https://docs.kucoin.com).
 
-## Getting Started
+- Also, the [kucoin Node.js SDK](https://github.com/Kucoin/kucoin-node-sdk)
 
-First, run the development server:
+## NOTE:
+THIS PROJECT IS ONLY PART OF A LARGER PROJECT AIMED AT AUTHOMATING EVERYTHING TRADING AND MAKING IT ACCESSIBLE TO MANY. The larger project is hosted on a Private Repository. If you which to contribute to the larger Project or have access to the team, Message Me (+23408087118129 Whatsapp or email onwukavictoronwuka@gmail.com)
+ 
+## Tech Stack Used
+the tech stack used are all Javascript for now. They include:
+- TypeScript
+- React.js
+- Node.js
+- Next.js
+- NPM packages installed
+
+## How To Run This Project
+First, clone the Repositories. Make sure you have a suitable editor for javascript and Node.js. Also, you must have Node.js installed in your computer.
+
+Next: Run the following command on your terminal (project root) to install the needed NPM packages
 
 ```bash
-npm run dev
+npm install
 # or
-yarn dev
+yarn install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+after the installations are complete, run:
+```bash
+npm run dev 
+# or
+yarn dev
+
+Open [https://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
