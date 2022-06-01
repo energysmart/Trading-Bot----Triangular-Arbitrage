@@ -5,6 +5,7 @@ import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import axios from "axios";
 import SpotTable from "../components/table";
+import { Tweet } from "react-twitter-widgets";
 
 class Home extends Component {
   constructor(props) {
@@ -60,13 +61,14 @@ class Home extends Component {
             </Button>
           </Stack>
           <h1 className={styles.title}>
-            Welcome to <a href="https://nextjs.org">Next.js!</a> integrated with{" "}
-            <a href="https://mui.com/">Material-UI!</a>
+            Welcome to To My Cryptocurrency Triangular Arbitrage Trading Bot
           </h1>
+
           <div className={styles.description}>
             <SpotTable spotted={this.state.spotted} />
-            <code className={styles.code}>pages/index.js</code>
+            <code className={styles.code}>https://twitter.com/MrOvos</code>
           </div>
+          <Tweet tweetId="1524317983279046657" />
         </main>
       </div>
     );
