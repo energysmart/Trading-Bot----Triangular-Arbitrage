@@ -64,7 +64,7 @@ Thanks For Checking out this Project. Please Contribute.
 
 ## Follow me on Twitter and Medium
 
-= My Twitter Page - [Onwuka Victor@MrOvos](https://twitter.com/MrOvos)
+- My Twitter Page - [Onwuka Victor@MrOvos](https://twitter.com/MrOvos)
 
 - I also write on Medium. Stories on Programing and Cryptocurrency and Startups on my [Medium](https://medium.com/@MrOvos) blog.
 
